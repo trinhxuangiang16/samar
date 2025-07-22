@@ -31,6 +31,11 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.0/dist/fancybox/fancybox.css"
     />
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <header>
@@ -388,7 +393,92 @@
         </div>
       </div>
     </section>
+    <section class="blog">
+      <div class="container">
+        <div class="blog-title">
+          <p>Our Blog</p>
+          <h1>Latest News & Blog</h1>
+        </div>
+        <div class="blog-slider-wrap swiper mySwiper">
+          <div class="blog-slider swiper-wrapper">
+            <div class="blog-item swiper-slide">
+              <div class="blog-header">
+                <img src="./image/pic1_1.jpg" alt="" />
+                <p>23 MARCH 2022</p>
+              </div>
+              <div class="blog-body">
+                <h3>Lorem ipsum dolor sit amet consectetur.</h3>
+                <p>
+                  Nunc convallis sagittis dui eu dictum. Cras <br />
+                  sodales id ipsum ac aliquam. Phasellus justo
+                </p>
+              </div>
+              <div class="blog-footer">
+                <p>
+                  <i class="fa fa-user-circle footer-highlight"></i> By
+                  <span class="footer-highlight">Johne Doe</span>
+                </p>
+                <p>
+                  <i class="fa fa-comment-dots footer-highlight"></i> Comments
+                  15
+                </p>
+              </div>
+            </div>
+            <div class="blog-item swiper-slide">
+              <div class="blog-header">
+                <img src="./image/pic2.jpg" alt="" />
+                <p>23 MARCH 2022</p>
+              </div>
+              <div class="blog-body">
+                <h3>Lorem ipsum dolor sit amet consectetur.</h3>
+                <p>
+                  Nunc convallis sagittis dui eu dictum. Cras <br />
+                  sodales id ipsum ac aliquam. Phasellus justo
+                </p>
+              </div>
+              <div class="blog-footer">
+                <p>
+                  <i class="fa fa-user-circle footer-highlight"></i> By
+                  <span class="footer-highlight">Johne Doe</span>
+                </p>
+                <p>
+                  <i class="fa fa-comment-dots footer-highlight"></i> Comments
+                  15
+                </p>
+              </div>
+            </div>
+            <div class="blog-item swiper-slide">
+              <div class="blog-header">
+                <img src="./image/pic3.jpg" alt="" />
+                <p>23 MARCH 2022</p>
+              </div>
+              <div class="blog-body">
+                <h3>Lorem ipsum dolor sit amet consectetur.</h3>
+                <p>
+                  Nunc convallis sagittis dui eu dictum. Cras <br />
+                  sodales id ipsum ac aliquam. Phasellus justo
+                </p>
+              </div>
+              <div class="blog-footer">
+                <p>
+                  <i class="fa fa-user-circle footer-highlight"></i> By
+                  <span class="footer-highlight">Johne Doe</span>
+                </p>
+                <p>
+                  <i class="fa fa-comment-dots footer-highlight"></i> Comments
+                  15
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <br />
+    <br />
+    <br />
+    <br />
     <br />
     <br />
     <br />
@@ -428,6 +518,18 @@
     <script>
       Fancybox.bind("[data-fancybox]", {
         // Your custom options
+      });
+    </script>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        loop: true,
+        freeMode: false,
+        grabCursor: true,
       });
     </script>
   </body>

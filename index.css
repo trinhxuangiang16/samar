@@ -648,12 +648,16 @@ header .nav {
 
 /* start portfolio */
 .portfolio {
-  width: 60%;
-  margin: 110px auto;
   background-image: url("./image/bg17.png");
   background-size: cover;
+  background-position: center top;
+  overflow: hidden;
 }
 
+.portfolio .container {
+  margin: 110px auto;
+  width: 60%;
+}
 .portfolio-title {
   text-align: center;
 }
@@ -780,3 +784,112 @@ header .nav {
 }
 
 /* end portfolio */
+
+/* start blog */
+.blog {
+  background-image: url("./image/bg16.png");
+  background-size: cover;
+  background-position: center top;
+  overflow: hidden;
+}
+.blog .container {
+  width: 63%;
+  margin: 110px auto;
+}
+
+.blog-title {
+  text-align: center;
+}
+.blog-title p {
+  color: #f55f8d;
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.blog-title h1 {
+  font-size: 70px;
+  line-height: 1.1;
+  font-weight: 800;
+  color: #262626;
+  margin-bottom: 30px;
+}
+
+.blog-slider {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* .blog-slider * {
+  margin-left: 10px;
+  margin-right: 10px;
+} */
+
+.blog-item {
+  text-align: left;
+  background-color: rgba(245, 95, 141, 0.1);
+  border-radius: 10px;
+  padding: 0;
+}
+.swiper-slide {
+  width: 380px !important;
+}
+.blog-header {
+  position: relative;
+}
+.blog-header img {
+  width: 100%;
+  /* object-fit: cover; */
+  margin: 0;
+  border-radius: 10px;
+}
+
+.blog-header p {
+  background-image: linear-gradient(
+    to right,
+    rgb(245, 95, 141) 0px,
+    rgb(248, 174, 86) 51%,
+    rgb(245, 95, 141) 100%
+  );
+  width: fit-content;
+  padding: 10px 20px;
+  background-size: 200%;
+  color: white;
+  border-radius: 5px;
+  margin-left: 17px;
+  position: absolute;
+  bottom: -15px;
+}
+
+.blog-body {
+  padding: 30px 30px 40px 17px;
+}
+.blog-body h3 {
+  font-size: 24px;
+  color: #262626;
+  line-height: 1.4;
+}
+
+.blog-body p {
+  font-size: 16px;
+  color: #636363;
+  line-height: 1.4;
+}
+
+.blog-footer {
+  display: flex;
+  padding: 15px;
+  color: #636363;
+  font-size: 14px;
+  border-top: #e6e6e6 1px solid;
+  text-transform: uppercase;
+}
+.blog-footer * {
+  margin-right: 2px;
+}
+.footer-highlight {
+  color: #f55f8d !important;
+}
+.blog-footer p:last-of-type {
+  margin-left: 30px;
+}
+/* end blog */
