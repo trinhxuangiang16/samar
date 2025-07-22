@@ -26,6 +26,11 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
+    <!-- fancybox -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.0/dist/fancybox/fancybox.css"
+    />
   </head>
   <body>
     <header>
@@ -280,22 +285,105 @@
         <div class="portfolio-content">
           <div class="portfolio-item1 portfolio-item">
             <img src="./image/pic1_2.jpg" alt="" />
+            <div class="overlay-item">
+              <div class="portfolio-icon">
+                <a
+                  href="./image/pic1_2.jpg"
+                  data-fancybox="gallery"
+                  data-caption="Caption #1"
+                  ><i class="fa fa-plus"></i
+                ></a>
+              </div>
+              <div class="overlay-text">
+                <h3>Software Landing</h3>
+                <p>By Jhone Doe</p>
+              </div>
+            </div>
           </div>
           <div class="portfolio-item2 portfolio-item">
-            <img src="image/pic2_1.jpg" alt="" />
+            <img src="./image/pic2_1.jpg" alt="" />
+            <div class="overlay-item">
+              <div class="portfolio-icon">
+                <a
+                  href="./image/pic2_1.jpg"
+                  data-fancybox="gallery"
+                  data-caption="Caption #1"
+                  ><i class="fa fa-plus"></i
+                ></a>
+              </div>
+              <div class="overlay-text">
+                <h3>Software Landing</h3>
+                <p>By Jhone Doe</p>
+              </div>
+            </div>
           </div>
           <div class="portfolio-item3 portfolio-item">
-            <img src="image/pic3_1.jpg" alt="" />
+            <img src="./image/pic3_1.jpg" alt="" />
+            <div class="overlay-item">
+              <div class="portfolio-icon">
+                <a
+                  href="./image/pic3_1.jpg"
+                  data-fancybox="gallery"
+                  data-caption="Caption #1"
+                  ><i class="fa fa-plus"></i
+                ></a>
+              </div>
+              <div class="overlay-text">
+                <h3>Software Landing</h3>
+                <p>By Jhone Doe</p>
+              </div>
+            </div>
           </div>
           <div class="portfolio-item4 portfolio-item">
-            <img src="image/pic4.jpg" alt="" />
+            <img src="./image/pic4.jpg" alt="" />
+            <div class="overlay-item">
+              <div class="portfolio-icon">
+                <a
+                  href="./image/pic4.jpg"
+                  data-fancybox="gallery"
+                  data-caption="Caption #1"
+                  ><i class="fa fa-plus"></i
+                ></a>
+              </div>
+              <div class="overlay-text">
+                <h3>Software Landing</h3>
+                <p>By Jhone Doe</p>
+              </div>
+            </div>
           </div>
           <div class="portfolio-item5 portfolio-item">
-            <img src="image/pic5.jpg" alt="" />
+            <img src="./image/pic5.jpg" alt="" />
+            <div class="overlay-item">
+              <div class="portfolio-icon">
+                <a
+                  href="./image/pic5.jpg"
+                  data-fancybox="gallery"
+                  data-caption="Caption #1"
+                  ><i class="fa fa-plus"></i
+                ></a>
+              </div>
+              <div class="overlay-text">
+                <h3>Software Landing</h3>
+                <p>By Jhone Doe</p>
+              </div>
+            </div>
           </div>
-
           <div class="portfolio-item6 portfolio-item">
-            <img src="image/pic6.jpg" alt="" />
+            <img src="./image/pic6.jpg" alt="" />
+            <div class="overlay-item">
+              <div class="portfolio-icon">
+                <a
+                  href="./image/pic6.jpg"
+                  data-fancybox="gallery"
+                  data-caption="Caption #1"
+                  ><i class="fa fa-plus"></i
+                ></a>
+              </div>
+              <div class="overlay-text">
+                <h3>Software Landing</h3>
+                <p>By Jhone Doe</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -333,6 +421,13 @@
       $(".counter").countUp({
         delay: 10,
         time: 3000,
+      });
+    </script>
+    <!-- fancybox -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.0/dist/fancybox/fancybox.umd.js"></script>
+    <script>
+      Fancybox.bind("[data-fancybox]", {
+        // Your custom options
       });
     </script>
   </body>
