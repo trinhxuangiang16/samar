@@ -645,3 +645,76 @@ header .nav {
   }
 }
 /* end feature */
+
+/* start portfolio */
+.portfolio {
+  width: 60%;
+  margin: 0 auto;
+  background-image: url("./image/bg17.png");
+  background-size: cover;
+}
+.portfolio-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr) 1.5fr;
+  gap: 35px;
+}
+.portfolio-item {
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+.portfolio-item img {
+  width: 100%;
+  height: 100%;
+}
+
+.portfolio-item1 {
+  grid-column: 1 / span 2;
+}
+
+.portfolio-item6 {
+  grid-column: 3 / 4;
+  grid-row: 2 / 4;
+}
+.portfolio-item5 {
+  grid-column: 1 / span 2;
+}
+
+/* .portfolio {
+  background-image: url("./image/bg17.png");
+  background-size: cover;
+
+  width: 70%;
+  margin: 0 auto;
+}
+
+.portfolio-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr) 1.5fr;
+  gap: 35px;
+}
+
+.portfolio-item {
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-item img {
+  width: 100%;
+  height: 100%;
+}
+
+.portfolio-item1 {
+  grid-column: 1 / span 2;
+}
+
+.portfolio-item5 {
+  grid-column: 1 / span 2;
+}
+
+.portfolio-item6 {
+  grid-column: 3 / 4;
+  grid-row: 2 / 4;
+} */
+/* end portfolio */
