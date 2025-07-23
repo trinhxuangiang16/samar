@@ -100,7 +100,7 @@
         </div>
       </div>
     </header>
-    <section class="service">
+    <section id="service" class="service">
       <div class="container">
         <div class="service-title">
           <p>What We Do Best</p>
@@ -137,7 +137,7 @@
         </div>
       </div>
     </section>
-    <section class="about">
+    <section id="about" class="about">
       <div class="container">
         <div
           class="wow about-left animate__animated animate__slideInLeft"
@@ -281,7 +281,7 @@
         <img src="./image/pic3.png" alt="" />
       </div>
     </section>
-    <section class="portfolio">
+    <section id="portfolio" class="portfolio">
       <div class="container">
         <div class="portfolio-title">
           <p>Portfolio</p>
@@ -299,7 +299,7 @@
                 <a
                   href="./image/pic1_2.jpg"
                   data-fancybox="gallery"
-                  data-caption="Caption #1"
+                  data-caption="Design 1"
                   ><i class="fa fa-plus"></i
                 ></a>
               </div>
@@ -320,7 +320,7 @@
                 <a
                   href="./image/pic2_1.jpg"
                   data-fancybox="gallery"
-                  data-caption="Caption #1"
+                  data-caption="Design 2"
                   ><i class="fa fa-plus"></i
                 ></a>
               </div>
@@ -342,7 +342,7 @@
                 <a
                   href="./image/pic3_1.jpg"
                   data-fancybox="gallery"
-                  data-caption="Caption #1"
+                  data-caption="Design 3"
                   ><i class="fa fa-plus"></i
                 ></a>
               </div>
@@ -364,7 +364,7 @@
                 <a
                   href="./image/pic4.jpg"
                   data-fancybox="gallery"
-                  data-caption="Caption #1"
+                  data-caption="Design 4"
                   ><i class="fa fa-plus"></i
                 ></a>
               </div>
@@ -386,7 +386,7 @@
                 <a
                   href="./image/pic5.jpg"
                   data-fancybox="gallery"
-                  data-caption="Caption #1"
+                  data-caption="Design 5"
                   ><i class="fa fa-plus"></i
                 ></a>
               </div>
@@ -408,7 +408,7 @@
                 <a
                   href="./image/pic6.jpg"
                   data-fancybox="gallery"
-                  data-caption="Caption #1"
+                  data-caption="Design 6"
                   ><i class="fa fa-plus"></i
                 ></a>
               </div>
@@ -421,7 +421,7 @@
         </div>
       </div>
     </section>
-    <section class="blog">
+    <section id="blog" class="blog">
       <div class="container">
         <div class="blog-title">
           <p>Our Blog</p>
@@ -556,19 +556,23 @@
             <h3>Our links</h3>
             <ul>
               <li>
-                <a href="#"> <i class="fa fa-angle-right"></i> Home </a>
+                <a href="#header"> <i class="fa fa-angle-right"></i> Home </a>
               </li>
               <li>
-                <a href="#"> <i class="fa fa-angle-right"></i> About Us </a>
+                <a href="#about">
+                  <i class="fa fa-angle-right"></i> About Us
+                </a>
               </li>
               <li>
-                <a href="#"> <i class="fa fa-angle-right"></i> Services </a>
+                <a href="#service">
+                  <i class="fa fa-angle-right"></i> Services
+                </a>
               </li>
               <li>
                 <a href="#"> <i class="fa fa-angle-right"></i> Team </a>
               </li>
               <li>
-                <a href="#"> <i class="fa fa-angle-right"></i> Blog </a>
+                <a href="#blog"> <i class="fa fa-angle-right"></i> Blog </a>
               </li>
             </ul>
           </div>
@@ -606,7 +610,9 @@
                 <a href="#"> <i class="fa fa-angle-right"></i> FAQ </a>
               </li>
               <li>
-                <a href="#"> <i class="fa fa-angle-right"></i> Portfolio </a>
+                <a href="#portfolio">
+                  <i class="fa fa-angle-right"></i> Portfolio
+                </a>
               </li>
               <li>
                 <a href="#">
@@ -648,17 +654,17 @@
     <script>
       new WOW({
         resetAnimation: false,
-        // animateClass: "animate__animated",
       }).init();
     </script>
 
-    <!-- jquery cdn waypoint để làm số đếm -->
+    <!-- jquery cdn waypoint -->
     <script
       type="text/javascript"
       src="https://code.jquery.com/jquery-2.2.4.js"
       integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
       crossorigin="anonymous"
     ></script>
+
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"
       integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ=="
@@ -674,6 +680,7 @@
         time: 3000,
       });
     </script>
+
     <!-- fancybox -->
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.0/dist/fancybox/fancybox.umd.js"></script>
     <script>
