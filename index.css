@@ -253,7 +253,11 @@ header .nav {
 /* service start */
 .service {
   background-image: url(./image/bg2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
   text-align: center;
+  padding-top: 125px;
+  padding-bottom: 50px;
 }
 .service .container {
   width: 65%;
@@ -320,7 +324,7 @@ header .nav {
 
 /* start about */
 .about {
-  margin-top: 115px;
+  padding-top: 115px;
   background-image: url("./image/bg15.png");
   background-size: 100%;
   padding-bottom: 100px;
